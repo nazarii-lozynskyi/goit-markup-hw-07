@@ -1,0 +1,13 @@
+{
+    "version": 3,
+    "mappings": "AAKA,AAAA,IAAI,CAAA;EACA,gBAAgB,ECJL,OAAO;CDKrB",
+    "sources": [
+        "../sass/main.scss",
+        "../sass/utils/_variables.scss",
+        "../sass/components/_page-heder.scss",
+        "../sass/components/_page-footer.scss",
+        "../sass/components/_logo.scss"
+    ],
+    "names": [],
+    "file": "main.css"
+}
