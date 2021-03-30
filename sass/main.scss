@@ -1,0 +1,8 @@
+@import "./utils/variables";
+@import "./components/page-heder";
+@import "./components/page-footer";
+@import "./components/logo";
+
+body{
+    background-color: $accent-color;
+}
