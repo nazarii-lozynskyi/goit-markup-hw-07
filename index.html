@@ -24,7 +24,10 @@
                     href="./index.html" 
                     class="logo__link link" 
                     lang="en">
-                        <span class="logo-web">Web</span>Studio
+                        <span 
+                        class="logo__text">
+                            Web<span class="logo--light-them">Studio</span>
+                        </span>        
                     </a>
                     <ul class="nav__list list">
                         <li class="nav__item">
@@ -89,7 +92,12 @@
     <!--HERO-->
         <section class="hero overlay">
             <h1 class="hero__title">Эффективные решения для вашего бизнеса</h1>
-            <button data-modal-open type="button" class="hero__btn">Заказать услугу</button>
+            <button 
+            data-modal-open 
+            type="button" 
+            class="btn hero__btn">
+                Заказать услугу
+            </button>
         </section>
 
     <!--Features-->
@@ -156,10 +164,10 @@
             </div>
         </section>
 
-    <!--What we do-->
+    <!--Services-->
         <section class="services section">
             <div class="container">
-                <h2 class="services__title">Чем мы занимаемся</h2>
+                <h2 class="services__title section__title">Чем мы занимаемся</h2>
                 <ul class="services__list list">
                     <li class="services__item">
                         <div class="services-item__image-explanation">
@@ -200,10 +208,10 @@
             </div>
         </section>
 
-    <!--Our team-->
+    <!--Team Members-->
         <section class="team-members section">
             <div class="container">
-                <h2 class="team-members__title">Наша команда</h2>
+                <h2 class="team-members__title section__title">Наша команда</h2>
                 <ul class="team-members__list list">
                     <li class="team-members__item">
                         <img 
@@ -217,7 +225,7 @@
                             <p class="team-members__profession" lang="en">Product Designer</p>
                             <ul class="team-members-soc-link__list list">
                                 <li class="team-members-soc-link__item">
-                                    <a href="" class="team-members-soc-link_link">
+                                    <a href="" class="team-members-soc-link__link">
                                         <svg 
                                         class="team-members-soc-link__icon" 
                                         width="20"
@@ -228,7 +236,7 @@
                                 </li>
 
                                 <li class="team-members-soc-link__item">
-                                    <a href="" class="team-members-soc-link_link">
+                                    <a href="" class="team-members-soc-link__link">
                                         <svg 
                                         class="team-members-soc-link__icon" 
                                         width="20"
@@ -263,7 +271,7 @@
                         </div>
                     </li>
 
-                    <li class="team-members-item">
+                    <li class="team-members__item">
                         <img 
                         src="./images/olga_photo.jpg" 
                         alt="Фото Ольги Репиной" 
@@ -437,10 +445,10 @@
             </div>
         </section>
 
-        <!--Regular customers-->  
+        <!--Customers-->  
         <section class="customers section">
             <div class="container">
-                <h2 class="customers__title">Постоянные клиенты</h2>
+                <h2 class="customers__title section__title">Постоянные клиенты</h2>
                 <ul class="customers__list list">
                     <li class="customers__item">
                         <a href="" class="customers-item__link">
@@ -515,18 +523,27 @@
 <!--Footer-->
     <footer class="page-footer">
         <div class="container">
-            <div>
-                <a href="./index.html" class="logo link" lang="en"><span class="logo-web">Web</span><span class="logo-studio">Studio</span></a>
+            <div class="address-main">
+                <a 
+                href="./index.html" 
+                class="logo__link logo-footer link" 
+                lang="en">
+                    <span 
+                    class="logo__text">
+                        Web<span class="logo--dark-them">Studio</span>
+                    </span>        
+                </a>
 
 <!--Address-->
                 <address class="address">
                     <ul class="address__list list">
-
                         <li class="address__item"> 
                             <a 
                             href="https://goo.gl/maps/oQdtfQdhAtJSonEbA" 
                             class="address__link link">
-                            г. Киев, пр-т Леси Украинки, 26
+                                <span class="address__text address__text--wight">
+                                    г. Киев, пр-т Леси Украинки, 26
+                                </span>
                             </a> 
                         </li>
 
@@ -534,7 +551,9 @@
                             <a 
                             href="mailto:info@example.com" 
                             class="address__link link">
-                            info@example.com
+                                <span class="address__text">
+                                    info@example.com
+                                </span>    
                             </a>
                         </li>
 
@@ -542,7 +561,9 @@
                             <a 
                             href="tel:+380991111111" 
                             class="address-tel link">
-                            +38 099 111 11 11
+                                <span class="address__text">
+                                    +38 099 111 11 11
+                                </span>
                             </a>
                         </li>
                     </ul>
@@ -600,8 +621,8 @@
             </div>
 
 <!--Mail-input-->            
-            <div class="mail-input-block">
-                <p class="mail-input__title"> Подпишитесь на рассылку</p>
+            <div class="mail-input__block">
+                <p class="mail-input__title subscribe__title"> Подпишитесь на рассылку</p>
                 <form class="mail-input__form">
                     <input 
                     id="mail"
@@ -612,7 +633,7 @@
 
                     <button 
                     type="submit" 
-                    class="mail-input__btn">
+                    class="btn mail-input__btn">
                         <span 
                         class="mail-input-btn__text">
                             Подписаться
@@ -636,7 +657,7 @@
         <div class="modal">
             <button data-modal-close 
             type="button" 
-            class="modal-btn--close">
+            class="btn modal-btn--close">
                 <svg 
                 class="modal-btn__close-icon" 
                 width="18"
@@ -650,81 +671,91 @@
             </p>
 
             <form class="modal__input-form">
-                <div class="form-name form-field">
-                    <label 
-                    for="name" 
-                    class="form-name__label">
-                        Имя
-                    </label>
-                    <input 
-                    id="name"
-                    type="text" 
-                    name="name" 
-                    class="form-name__input form-input" 
-                    autocomplete="name">
-                    <svg 
-                    class="form-name__icon"
-                    width="18"
-                    height="18">
-                        <use href="./images/icons.svg#icon-modal-person"></use>
-                    </svg>
-                </div>
+                <ul class="modal-input-form__list list">
+                    <li class="modal-input-form__item">
+                        <div class="form-name form-field">
+                            <label 
+                            for="name" 
+                            class="form-name__label modal-window__form-label">
+                                Имя
+                            </label>
+                            <input 
+                            id="name"
+                            type="text" 
+                            name="name" 
+                            class="form-name__input modal-window__form-input" 
+                            autocomplete="name">
+                                <svg 
+                                class="form-name__icon form-input__icon"
+                                width="18"
+                                height="18">
+                                    <use href="./images/icons.svg#icon-modal-person"></use>
+                                </svg>
+                        </div>
+                    </li>
 
-                <div class="form-tel form-field">
-                    <label 
-                    for="tel" 
-                    class="form-tel__label">
-                        Телефон
-                    </label>
-                    <input 
-                    id="tel"
-                    type="tel" 
-                    name="tel" 
-                    class="form-tel__input form-input" 
-                    autocomplete="tel">
-                    <svg 
-                    class="form-tel__icon"
-                    width="18"
-                    height="18">
-                        <use href="./images/icons.svg#icon-modal-phone"></use>
-                    </svg>
-                </div>
-           
-               <div class="form-email form-field">
-                    <label 
-                    for="email" 
-                    class="form-email__label">
-                        Почта
-                    </label>
-                    <input
-                    id="email"
-                    type="email"
-                    name="email"
-                    class="form-email__input form-input"
-                    autocomplete="email">
-                    <svg 
-                    class="form-email__icon"
-                    width="18"
-                    height="18">
-                        <use href="./images/icons.svg#icon-modal-email"></use>
-                    </svg>
-               </div>
-                
-               <div class="form-comment form-field">
-                    <label 
-                    for="comment" 
-                    class="form-comment__label">
-                        Комментарий
-                    </label>
-                    <textarea
-                    name="comment"
-                    id="comment"
-                    rows="10"
-                    placeholder="Введите текст"
-                    class="form-comment__textarea form-input">
-                    </textarea>
-               </div>
-                
+                    <li class="modal-input-form__item">
+                        <div class="form-tel form-field">
+                            <label 
+                            for="tel" 
+                            class="form-tel__label modal-window__form-label">
+                                Телефон
+                            </label>
+                            <input 
+                            id="tel"
+                            type="tel" 
+                            name="tel" 
+                            class="form-tel__input modal-window__form-input" 
+                            autocomplete="tel">
+                                <svg 
+                                class="form-tel__icon form-input__icon"
+                                width="18"
+                                height="18">
+                                    <use href="./images/icons.svg#icon-modal-phone"></use>
+                                </svg>
+                        </div>
+                    </li>
+
+                    <li class="modal-input-form__item">
+                        <div class="form-email form-field">
+                            <label 
+                            for="email" 
+                            class="form-email__label modal-window__form-label">
+                                Почта
+                            </label>
+                            <input
+                            id="email"
+                            type="email"
+                            name="email"
+                            class="form-email__input modal-window__form-input"
+                            autocomplete="email">
+                                <svg 
+                                class="form-email__icon form-input__icon"
+                                width="18"
+                                height="18">
+                                    <use href="./images/icons.svg#icon-modal-email"></use>
+                                </svg>
+                        </div>
+                    </li>
+
+                    <li class="modal-input-form__item">
+                        <div class="form-comment form-field">
+                            <label
+                            for="comment"
+                            class="form-comment__label modal-window__form-label">
+                                Комментарий
+                            </label>
+                            <textarea
+                            name="comment"
+                            id="comment"
+                            rows="10"
+                            placeholder="Введите текст"
+                            class="modal-window__form-input form-comment__textarea">
+                            </textarea>
+                        </div>
+                    </li>
+                </ul>
+
                <div class="form-agreement">
                     <label class="form-agreement__label">
                         <input 
@@ -751,7 +782,7 @@
 
                 <button 
                 type="submit" 
-                class="modal-btn--send">
+                class="btn modal-btn--send">
                     <span 
                     class="modal-btn-send__text">
                         Отправить
