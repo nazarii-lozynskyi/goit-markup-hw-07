@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/0.2.0/modern-normalize.css"
         integrity="sha512-oxqL25oMBPTFLK5OOR4U/Y//5oyc+3B8MJVTuGD2FLdyA+VXlhKMyQ7YjHNSI5+CLk0UdMLw1lV64dDuT1Batw=="
         crossorigin="anonymous" />
-    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/main.min.css">
 </head>
 
 <body>
@@ -24,13 +24,16 @@
                     href="./index.html" 
                     class="logo__link link" 
                     lang="en">
-                        <span class="logo-web">Web</span>Studio
+                        <span 
+                        class="logo__text">
+                            Web<span class="logo--light-them">Studio</span>
+                        </span>        
                     </a>
                     <ul class="nav__list list">
                         <li class="nav__item">
                             <a 
                             href="./index.html" 
-                            class="nav__link current link">
+                            class="nav__link link">
                                 Студия
                             </a>
                         </li>
@@ -38,7 +41,7 @@
                         <li class="nav__item">
                             <a 
                             href="./portfolio.html" 
-                            class="nav__link link">
+                            class="nav__link current link">
                                 Портфолио
                             </a>
                         </li>
@@ -83,7 +86,7 @@
                     </li>
                 </ul>
             </div>
-        </header>
+    </header>
 
     <main>
         <section class="portfolio section">
@@ -93,7 +96,7 @@
                     <li class="filters__item">
                         <button 
                         type="button" 
-                        class="filters__btn">
+                        class="btn filters__btn">
                             Все
                         </button>
                     </li>
@@ -101,7 +104,7 @@
                     <li class="filters__item">
                         <button 
                         type="button" 
-                        class="filters__btn">
+                        class="btn filters__btn">
                             Веб-сайты
                         </button>
                     </li>
@@ -109,7 +112,7 @@
                     <li class="filters__item">
                         <button 
                         type="button" 
-                        class="filters__btn">
+                        class="btn filters__btn">
                             Приложения
                         </button>
                     </li>
@@ -117,7 +120,7 @@
                     <li class="filters__item">
                         <button 
                         type="button" 
-                        class="filters__btn">
+                        class="btn filters__btn">
                             Дизайн
                         </button>
                     </li>
@@ -125,20 +128,20 @@
                     <li class="filters__item">
                         <button 
                         type="button" 
-                        class="filters__btn">
+                        class="btn filters__btn">
                             Маркетинг
                         </button>
                     </li>
                 </ul>
                                     
-<!--PICTURES-->
+<!--Cards Set-->
                 <ul class="card__list list">
                     <li class="card__item">
                         <article class="card">
                             <a 
                             href="" 
                             class="card__link link"> 
-                                <div class="card-additional-info">
+                                <div class="card__additional-info">
                                     <img 
                                     src="./images/portfolio/web-sites/tehno.jpg" 
                                     alt="Главная страница сайта Технокряк" 
@@ -146,14 +149,14 @@
                                     height="294"
                                     class="card__image">
                                     <p 
-                                    class="card-additional-info__text">
+                                    class="card__overlay">
                                         Технокряк это современная площадка распространения коронавируса. 
                                         Компании используют эту платформу для цифрового шпионажа и атак на защищённые сервера конкурентов.
                                     <p>
                                 </div>
                                 <div class="card__description">
-                                    <h2 class="card__title">Технокряк</h2>
-                                    <p class="card__text">Веб-сайт</p>
+                                    <h2 class="card__name">Технокряк</h2>
+                                    <p class="card__category">Веб-сайт</p>
                                 </div>
                             </a>
                         </article>
@@ -164,7 +167,7 @@
                             <a 
                             href="" 
                             class="card__link link"> 
-                                <div class="card-additional-info">
+                                <div class="card__additional-info">
                                     <img 
                                     src="./images/portfolio/design/no-vs-gs.jpg" 
                                     alt="Два баскетболиста" 
@@ -172,14 +175,14 @@
                                     height="294"
                                     class="card__image">
                                     <p 
-                                    class="card-additional-info__text">
+                                    class="card__overlay">
                                         Технокряк это современная площадка распространения коронавируса. 
                                         Компании используют эту платформу для цифрового шпионажа и атак на защищённые сервера конкурентов.
                                     <p>
                                 </div>
                                 <div class="card__description">
-                                    <h2 class="card__title">Постер <span lang="en">New Orlean vs Golden Star</span></h2>
-                                    <p class="card__text">Дизайн</p>
+                                    <h2 class="card__name">Постер <span lang="en">New Orlean vs Golden Star</span></h2>
+                                    <p class="card__category">Дизайн</p>
                                 </div>
                             </a>
                         </article>
@@ -190,7 +193,7 @@
                             <a 
                             href="" 
                             class="card__link link">
-                                <div class="card-additional-info">
+                                <div class="card__additional-info">
                                     <img 
                                     src="./images/portfolio/applications/seafood.jpg" 
                                     alt="Логотип ресторана Seafood" 
@@ -198,14 +201,14 @@
                                     height="294"
                                     class="card__image">
                                     <p 
-                                    class="card-additional-info__text">
+                                    class="card__overlay">
                                         Технокряк это современная площадка распространения коронавируса. 
                                         Компании используют эту платформу для цифрового шпионажа и атак на защищённые сервера конкурентов.
                                     <p>
                                 </div>
                                 <div class="card__description">
-                                    <h2 class="card__title">Ресторан <span lang="en">Seafood</span></h2>
-                                    <p class="card__text">Приложение</p>
+                                    <h2 class="card__name">Ресторан <span lang="en">Seafood</span></h2>
+                                    <p class="card__category">Приложение</p>
                                 </div>
                             </a>
                         </article>
@@ -216,7 +219,7 @@
                             <a 
                             href="" 
                             class="card__link link"> 
-                                <div class="card-additional-info">
+                                <div class="card__additional-info">
                                     <img 
                                     src="./images/portfolio/marketing/prime.jpg" 
                                     alt="Наушники" 
@@ -224,14 +227,14 @@
                                     height="294"
                                     class="card__image">
                                     <p 
-                                    class="card-additional-info__text">
+                                    class="card__overlay">
                                         Технокряк это современная площадка распространения коронавируса. 
                                         Компании используют эту платформу для цифрового шпионажа и атак на защищённые сервера конкурентов.
                                     <p>
                                 </div>
                                 <div class="card__description">
-                                    <h2 class="card__title">Проект <span lang="en">Prime</span></h2>
-                                    <p class="card__text">Маркетинг</p>
+                                    <h2 class="card__name">Проект <span lang="en">Prime</span></h2>
+                                    <p class="card__category">Маркетинг</p>
                                 </div>
                             </a>
                         </article>
@@ -242,7 +245,7 @@
                             <a 
                             href="" 
                             class="card__link link"> 
-                                <div class="card-additional-info">
+                                <div class="card__additional-info">
                                     <img 
                                     src="./images/portfolio/applications/boxes.jpg" 
                                     alt="Две коробки:белая и коричневая" 
@@ -250,14 +253,14 @@
                                     height="294"
                                     class="card__image">
                                     <p 
-                                    class="card-additional-info__text">
+                                    class="card__overlay">
                                         Технокряк это современная площадка распространения коронавируса. 
                                         Компании используют эту платформу для цифрового шпионажа и атак на защищённые сервера конкурентов.
                                     <p>
                                 </div>
                                 <div class="card__description">
-                                    <h2 class="card__title">Проект <span lang="en">Boxes</span></h2>
-                                    <p class="card__text">Приложение</p>
+                                    <h2 class="card__name">Проект <span lang="en">Boxes</span></h2>
+                                    <p class="card__category">Приложение</p>
                                 </div>
                             </a>
                         </article>
@@ -268,7 +271,7 @@
                             <a 
                             href="" 
                             class="card__link link"> 
-                                <div class="card-additional-info">
+                                <div class="card__additional-info">
                                     <img 
                                     src="./images/portfolio/web-sites/i-h-n-b.jpg" 
                                     alt="Главная страница сайта Inspiration has no Borders" 
@@ -276,14 +279,14 @@
                                     height="294"
                                     class="card__image">
                                     <p 
-                                    class="card-additional-info__text">
+                                    class="card__overlay">
                                         Технокряк это современная площадка распространения коронавируса. 
                                         Компании используют эту платформу для цифрового шпионажа и атак на защищённые сервера конкурентов.
                                     <p>
                                 </div>
                                 <div class="card__description">
-                                    <h2 lang="en" class="card__title">Inspiration has no Borders</h2>
-                                    <p class="card__text">Веб-сайт</p>
+                                    <h2 lang="en" class="card__name">Inspiration has no Borders</h2>
+                                    <p class="card__category">Веб-сайт</p>
                                 </div>
                             </a>
                         </article>
@@ -294,7 +297,7 @@
                             <a 
                             href="" 
                             class="card__link link"> 
-                                <div class="card-additional-info">
+                                <div class="card__additional-info">
                                     <img 
                                     src="./images/portfolio/design/le.jpg" 
                                     alt="Развертка книги" 
@@ -302,14 +305,14 @@
                                     height="294"
                                     class="card__image">
                                     <p 
-                                    class="card-additional-info__text">
+                                    class="card__overlay">
                                         Технокряк это современная площадка распространения коронавируса. 
                                         Компании используют эту платформу для цифрового шпионажа и атак на защищённые сервера конкурентов.
                                     <p>
                                 </div>
                                 <div class="card__description">
-                                    <h2 class="card__title">Издание <span lang="en">Limited Edition</span></h2>
-                                    <p class="card__text">Дизайн</p>
+                                    <h2 class="card__name">Издание <span lang="en">Limited Edition</span></h2>
+                                    <p class="card__category">Дизайн</p>
                                 </div>
                             </a>
                         </article>
@@ -320,7 +323,7 @@
                             <a 
                             href="" 
                             class="card__link link"> 
-                                <div class="card-additional-info">
+                                <div class="card__additional-info">
                                     <img 
                                     src="./images/portfolio/marketing/lab.jpg" 
                                     alt="Белая этикетка" 
@@ -328,14 +331,14 @@
                                     height="294"
                                     class="card__image">
                                     <p 
-                                    class="card-additional-info__text">
+                                    class="card__overlay">
                                         Технокряк это современная площадка распространения коронавируса. 
                                         Компании используют эту платформу для цифрового шпионажа и атак на защищённые сервера конкурентов.
                                     <p>
                                 </div>
                                 <div class="card__description">
-                                    <h2 class="card__title">Проект <span lang="en">LAB</span></h2>
-                                    <p class="card__text">Маркетинг</p>
+                                    <h2 class="card__name">Проект <span lang="en">LAB</span></h2>
+                                    <p class="card__category">Маркетинг</p>
                                 </div>
                             </a>
                         </article>
@@ -346,7 +349,7 @@
                             <a 
                             href="" 
                             class="card__link link"> 
-                                <div class="card-additional-info">
+                                <div class="card__additional-info">
                                     <img 
                                     src="./images/portfolio/applications/gb.jpg" 
                                     alt="Интерфейс приложения Growing Business" 
@@ -354,14 +357,14 @@
                                     height="294"
                                     class="card__image">
                                     <p 
-                                    class="card-additional-info__text">
+                                    class="card__overlay">
                                         Технокряк это современная площадка распространения коронавируса. 
                                         Компании используют эту платформу для цифрового шпионажа и атак на защищённые сервера конкурентов.
                                     <p>
                                 </div>
                                 <div class="card__description">
-                                    <h2 lang="en" class="card__title">Growing Business</h2>
-                                    <p class="card__text">Приложение</p>
+                                    <h2 lang="en" class="card__name">Growing Business</h2>
+                                    <p class="card__category">Приложение</p>
                                 </div>
                             </a>
                         </article>
@@ -374,18 +377,27 @@
 <!--Footer-->
     <footer class="page-footer">
         <div class="container">
-            <div>
-                <a href="./index.html" class="logo link" lang="en"><span class="logo-web">Web</span><span class="logo-studio">Studio</span></a>
+            <div class="address-main">
+                <a 
+                href="./index.html" 
+                class="logo__link logo-footer link" 
+                lang="en">
+                    <span 
+                    class="logo__text">
+                        Web<span class="logo--dark-them">Studio</span>
+                    </span>        
+                </a>
 
 <!--Address-->
                 <address class="address">
                     <ul class="address__list list">
-
                         <li class="address__item"> 
                             <a 
                             href="https://goo.gl/maps/oQdtfQdhAtJSonEbA" 
                             class="address__link link">
-                            г. Киев, пр-т Леси Украинки, 26
+                                <span class="address__text address__text--wight">
+                                    г. Киев, пр-т Леси Украинки, 26
+                                </span>
                             </a> 
                         </li>
 
@@ -393,7 +405,9 @@
                             <a 
                             href="mailto:info@example.com" 
                             class="address__link link">
-                            info@example.com
+                                <span class="address__text">
+                                    info@example.com
+                                </span>    
                             </a>
                         </li>
 
@@ -401,7 +415,9 @@
                             <a 
                             href="tel:+380991111111" 
                             class="address-tel link">
-                            +38 099 111 11 11
+                                <span class="address__text">
+                                    +38 099 111 11 11
+                                </span>
                             </a>
                         </li>
                     </ul>
@@ -459,8 +475,8 @@
             </div>
 
 <!--Mail-input-->            
-            <div class="mail-input-block">
-                <p class="mail-input__title"> Подпишитесь на рассылку</p>
+            <div class="mail-input__block">
+                <p class="mail-input__title subscribe__title"> Подпишитесь на рассылку</p>
                 <form class="mail-input__form">
                     <input 
                     id="mail"
@@ -471,7 +487,7 @@
 
                     <button 
                     type="submit" 
-                    class="mail-input__btn">
+                    class="btn mail-input__btn">
                         <span 
                         class="mail-input-btn__text">
                             Подписаться
