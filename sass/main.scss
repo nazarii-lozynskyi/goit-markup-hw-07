@@ -1,8 +1,29 @@
+@import "./base/reset-styles";
 @import "./utils/variables";
-@import "./components/page-heder";
-@import "./components/page-footer";
-@import "./components/logo";
-
-body{
-    background-color: $accent-color;
-}
+@import "./utils/visually-hidden";
+@import "./utils/container";
+@import "./utils/btn";
+@import "./utils/section";
+@import "./utils/section__title";
+@import "./utils/./subscribe__title";
+@import "./components/body";
+@import "./components/page-header/page-header";
+@import "./components/page-header/nav/logo";
+@import "./components/page-header/nav/nav";
+@import "./components/page-header/site-contacts/site-contacts";
+@import "./components/studio/hero";
+@import "./components/studio/features";
+@import "./components/studio/services";
+@import "./components/studio/team-members";
+@import "./components/studio/customers";
+@import "./utils/modal-window/modal-window";
+@import "./utils/modal-window/backdrop";
+@import "./utils/modal-window/modal-window__form-label";
+@import "./utils/modal-window/modal-window__form-input";
+@import "./components/page-footer/page-footer";
+@import "./components/page-footer/address";
+@import "./components/page-footer/subscribe";
+@import "./components/page-footer/mail-input__block";
+@import "./components/portfolio/filters-btn";
+@import "./components/portfolio/card-set/card__overlay";
+@import "./components/portfolio/card-set/cards-set";
