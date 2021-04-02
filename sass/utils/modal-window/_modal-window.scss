@@ -89,17 +89,16 @@
 
     margin-bottom: 10px;
 }
-
 .form-input__icon {
     position: absolute;
     top: 50%;
     left: 12px;
 
-    display: inline-block;
+    display: block;
 
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-    .modal-window__form-input:hover & {
+    .modal-window__form-input:focus & {
         fill: red;
     }
 }
@@ -135,9 +134,21 @@
     color: $accent-color;
 }
 
+//Modal-btn--send
 .modal-btn--send {
     display: block;
 
     margin-left: auto;
     margin-right: auto;
+
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+        border: none;
+        //outline: none;
+
+        box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+        transform: scale(1.1);
+    }
 }
