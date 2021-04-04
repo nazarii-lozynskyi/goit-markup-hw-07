@@ -672,6 +672,7 @@
 
             <form class="modal__input-form">
                 <ul class="modal-input-form__list list">
+    <!-- Input Name                 -->
                     <li class="modal-input-form__item">
                         <div class="form-name form-field">
                             <label 
@@ -693,7 +694,7 @@
                                 </svg>
                         </div>
                     </li>
-
+    <!-- Input Tel                 -->                
                     <li class="modal-input-form__item">
                         <div class="form-tel form-field">
                             <label 
@@ -715,7 +716,7 @@
                                 </svg>
                         </div>
                     </li>
-
+    <!-- Input Mail                 -->                
                     <li class="modal-input-form__item">
                         <div class="form-email form-field">
                             <label 
@@ -737,7 +738,7 @@
                                 </svg>
                         </div>
                     </li>
-
+    <!-- Input Comment                 -->                
                     <li class="modal-input-form__item">
                         <div class="form-comment form-field">
                             <label
@@ -745,37 +746,40 @@
                             class="form-comment__label modal-window__form-label">
                                 Комментарий
                             </label>
-                            <textarea
+                            <textarea 
                             name="comment"
                             id="comment"
                             rows="10"
                             placeholder="Введите текст"
-                            class="modal-window__form-input form-comment__textarea">
-                            </textarea>
+                            class="modal-window__form-input form-comment__textarea"></textarea>
                         </div>
                     </li>
                 </ul>
-
+    <!-- Checkbox                 -->            
                <div class="form-agreement">
-                    <label class="form-agreement__label">
+                   
+                    <label
+                    for="agreement"
+                    class="form-agreement__label">
                         <input 
-                        id="agreement"
-                        type="checkbox" 
-                        name="agreement" 
-                        value="agreement"
-                        class="form-agreement__check-input">
+                    id="agreement"
+                    type="checkbox" 
+                    name="agreement" 
+                    value="agreement"
+                    class="form-agreement__check-input visually-hidden {
+">
                         Соглашаюсь с рассылкой и принимаю 
                             <a 
                             href="" 
-                            class="form-agreement__link">
-                                Условия договора
+                            class="form-agreement__link"> 
+                                Условия договора 
                             </a>
-                        <span class="form-agreement__check-box">
-                            <!--<svg class="check-box-icon"
+                    <span class="check-box">
+                            <!-- <svg class="check-box__icon"
                             width="16"
                             height="15">
-                                <use href="./images/icons.svg#icon-not-check"></use>
-                            </svg>-->
+                                <use href="./images/icons.svg#icon-not-check"></use> -->
+                            </svg>
                         </span>
                     </label>
                </div>
