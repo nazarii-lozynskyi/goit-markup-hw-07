@@ -97,10 +97,10 @@
     display: block;
 
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
 
-    .modal-window__form-input:focus & {
-        fill: red;
-    }
+.modal-window__form-input:focus ~ .form-input__icon {
+    fill: $accent-color;
 }
 
 .form-comment__textarea {
@@ -115,7 +115,7 @@
 }
 
 .form-agreement__label {
-    display: inline-block;
+    display: block;
 
     font-weight: 400;
     font-size: 14px;
