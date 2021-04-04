@@ -723,8 +723,8 @@ body {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-window__form-input:focus .form-input__icon {
-  fill: red;
+.modal-window__form-input:focus ~ .form-input__icon {
+  fill: #2196f3;
 }
 
 .form-comment__textarea {
@@ -738,7 +738,7 @@ body {
 }
 
 .form-agreement__label {
-  display: inline-block;
+  display: block;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
@@ -816,7 +816,6 @@ body {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.01em;
-  color: rgba(117, 117, 117, 0.5);
   -webkit-transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -830,6 +829,43 @@ body {
   outline: none;
   border: 1px solid #2196f3;
   border-radius: 4px;
+}
+
+.form-agreement {
+  position: relative;
+}
+
+.check-box {
+  position: absolute;
+  top: 10px;
+  left: 0;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  cursor: pointer;
+  width: 16px;
+  height: 15px;
+  background-image: url(../images/icons/modal-window/not-check.svg);
+  -webkit-transition: background-image 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border-radius 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-image 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border-radius 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.check-box:focus {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.form-agreement__check-input:checked ~ .check-box {
+  border-radius: 2px;
+  background-color: #2196f3;
+  background-image: url(../images/icons/modal-window/check.svg);
+}
+
+.form-agreement__check-input:focus ~ .check-box {
+  outline: 3px dotted blue;
+}
+
+.check-box__icon {
+  display: block;
 }
 
 .page-footer {
@@ -923,7 +959,7 @@ body {
   font-size: 16px;
   line-height: 1.25;
   letter-spacing: 0.03em;
-  color: rgba(255, 255, 255, 0.6);
+  color: #fff;
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
   -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
